@@ -1,0 +1,330 @@
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+html{
+    box-sizing: border-box;
+    max-height: 100%;
+    min-height: 100vh;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+h1{
+    margin: 0;
+}
+
+}
+html, body{
+    height: 100%;
+}
+
+body{
+    color: #000;
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    border-radius: 0.25rem;
+    background: #8CC63F;
+    box-shadow: 0px 4px 20px 0px rgba(184, 180, 176, 0.80);
+    position: sticky;
+    top: -1em;
+    z-index: 2;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7.125rem;
+}
+.container-f{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.25rem;
+}
+
+.menu{
+    margin: 3rem;
+    margin-top: 1rem;
+}
+
+.menu-list__item{
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+}
+.menu-list__item-img{
+    width: 1.5rem;
+    height: 1.0625rem;
+    flex-shrink: 0;
+    margin-left: 0.38rem;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    transform: translateY(.2rem);
+}
+
+.menu-list__item-here{
+    color: #2F4F3C;
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+    text-decoration: underline 2.5px #fff;
+    text-underline-offset: 7px;
+}
+
+.menu-logo{
+    width: 7rem;
+    height: 7rem;
+    flex-shrink: 0;
+}
+
+.menu-list__right, .menu-list__left{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 2.75rem;
+
+}
+
+.main{
+    flex-grow: 1;
+  } 
+
+.main-back{
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 100%;
+    margin-top: -5.1rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.main-screen{
+    margin: 0 10.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #8CC63F;
+    text-align: center;
+    font-family: Orelega One;
+    font-size: 4.3125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.08625rem;
+    margin-top: 18.81rem;
+    margin-bottom: 2.37rem;
+    width: 34.5rem;
+}
+
+.main-title__line{
+    margin-bottom: 1.62rem;
+}
+
+.main-delivery__title{
+    margin-bottom: 3.75rem;
+    color: #2F4F3C;
+    text-align: center;
+    font-family: Orelega One;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+}
+
+.main-menu__list{
+    color: #2F4F3C;
+    font-family: Nunito;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 2.75rem;
+    text-decoration: underline 1px rgba(244, 118, 118, 0.50);
+    text-underline-offset: 12px;
+    margin-bottom: 4.5rem;
+}
+
+.main-menu__item.active{
+    text-decoration: underline 3px #F47676;
+    
+}
+
+.card-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 5.62rem;
+}
+
+.card-layout__item {
+    margin: 1rem;
+}
+
+.card{
+    display: flex;
+    width: 18.5rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    border-radius: 1.5rem;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(184, 180, 176, 0.50);
+}
+
+.card-title{
+    height: 5.25rem;
+    align-self: stretch;
+    color: #2F4F3C;
+    text-align: center;
+    font-family: Orelega One;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0325rem;
+    margin-bottom: 1.25rem;
+}
+
+.card-img{
+    margin-bottom: 1.25rem;
+}
+
+.card-price{
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    color: #000;
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+    margin-bottom: 1.25rem;
+}
+
+.card-price__now{
+    color: #006837;
+    font-family: Nunito;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.card-price__before{
+    text-decoration: line-through 3px #f4767688;
+}
+
+.card-price__before, .card-weight{
+    color: #000;
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0225rem;
+}
+
+.cart-adder{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+.quantity{
+    display: flex;
+    width: 7.125rem;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid #343434;
+}
+.quantity button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.quantity-cart{
+    display: flex;
+    width: 7.125rem;
+    padding: 0.75rem 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    background: #2F4F3C;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.75rem;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15.0625rem;
+    background: #8CC63F;
+    color: #FFF;
+}
+
+.footer-menu{
+    display: flex;
+    width: 67.6875rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-menu__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.125rem;
+}
+
+.footer-menu__title{
+    font-weight: 800;
+}
