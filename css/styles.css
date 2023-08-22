@@ -26,9 +26,14 @@ h1{
     margin: 0;
 }
 
+:root {
+    --index: calc(1vw + 1vh);
+}
+
 }
 html, body{
     height: 100%;
+
 }
 
 body{
@@ -39,12 +44,14 @@ body{
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.0225rem;
+    overflow-x: hidden;
 }
 
 .wrapper{
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    min-height: calc(100vh - calc(var(--index)*0.05));
 }
 
 .header{
@@ -129,6 +136,8 @@ body{
     flex-grow: 1;
   } 
 
+
+/* BACKGROUND */
 .main-back{
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     width: 100%;
@@ -143,44 +152,43 @@ body{
 .left-1{
     width: 21.25rem;
     height: 21.25rem;
-    margin-top: 60.56rem;
-    margin-left: -4rem;
+    top: 110vh;
+    left: -7.5vh;
 }
 .left-2{
     width: 27.625rem;
     height: 28rem;
     transform: rotate(89.524deg);
-    margin-top: 112.06rem;
-    margin-left: -4rem;
+    top: 190vh;
+    left: -4vh;
 }
 
 .left-3{
     width: 50.40788rem;
     height: 30.8015rem;
     transform: rotate(-4.387deg);
-    margin-top: 166.47rem;
-    margin-left: -35rem;
+    top: 290vh;
+    left: -56vh;
 }
 
 .right-1{
     width: 51.40288rem;
     height: 30.8015rem;
     transform: rotate(-4.387deg);
-    margin-top: 74.38rem;
-    margin-left: 100rem;
+    top: 130.38vh;
+    left: 172vh;
 }
 .right-2{
+    width: 40rem;
+    top: 240.5vh;
+    left: 165vh;
+}
+.right-3{
     width: 27.625rem;
     height: 28rem;
     transform: rotate(17.189deg);
-    margin-top: 128.5rem;
-    margin-left: 100rem;
-}
-.right-3{
-    width: 40rem;
-
-    margin-top: 200.44rem;
-    margin-left: 100rem;
+    top: 350.44vh;
+    left: 165vh;
 }
 
 
@@ -242,6 +250,108 @@ body{
     top: 2.5rem;
 }
 
+.cart-card{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+
+/* CART */
+.cart{
+    display: flex;
+    width: 18.5rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    border: 2px solid #8CC63F;
+    background: #FFF;
+}
+.cart-title{
+    align-self: stretch;
+    color: #2F4F3C;
+    text-align: center;
+    font-family: Orelega One;
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.0325rem;
+}
+
+.cart-item{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cart-trash__item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+}
+
+.cart-item__name{
+    color: #2F4F3C;
+    font-size: 1rem;;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+.cart-item__price{
+    color: #2F4F3C;
+    font-size: 1rem;    
+    font-weight: 400;
+    margin-left: 2.5rem;
+}
+.vector{
+    margin: 1.25rem 0;
+}
+
+.cart-item__score{
+    display: flex;
+    justify-content: space-between;
+}
+.score__total-title{
+    color: #2F4F3C;
+}
+.score__total{
+    color: #2F4F3C;
+    font-weight: 400;
+}
+
+.quantity-cart-pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.125rem;
+    padding: 0.75rem 0.5rem;
+    border-radius: 1rem;
+    background: #8CC63F;
+    border: none;
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.quantity-cart2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.125rem;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    border: 1px solid #343434;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+/* CARDS */
 .card-layout {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -367,7 +477,20 @@ body{
     padding: 0.75rem;
 }
 
+.card-layout, .card-layout__item{
+    transition: 400ms;
+}
 
+.card-layout .card-layout__item:hover {
+    transform: scale(1.05);
+  }
+  
+.card-layout:hover > .card-layout__item:not(:hover) {
+    filter: blur(1px);
+    transform: scale(0.95);
+}
+
+/* FOOTER */
 .footer{
     display: flex;
     justify-content: center;
@@ -395,7 +518,7 @@ body{
     font-weight: 800;
 }
 
-
+/* ADAPTATION */
 @media (min-width: 2000px){
     .main-back__left, .main-back__right{
         display: block;
