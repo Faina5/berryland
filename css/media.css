@@ -1,23 +1,12 @@
 /* ADAPTATION */
-@media (min-width: 2400px){
+@media (min-width: 2800px){
     .main-back__left, .main-back__right{
         display: none;
     }
 }
 
-
 @media (max-width: 1680px){
-    .right-1, .right-2, .right-3{
-        left: 130vh;
-    }
-
     .cart{
-        display: none;
-    }
-}
-
-@media (max-width: 1480px){
-    .right-1, .right-2, .right-3{
-       left: 110vh;
+        display: none !important;
     }
 }

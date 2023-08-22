@@ -160,7 +160,7 @@ body{
     height: 28rem;
     transform: rotate(89.524deg);
     top: 190vh;
-    left: -4vh;
+    left: -10vh;
 }
 
 .left-3{
@@ -176,19 +176,20 @@ body{
     height: 30.8015rem;
     transform: rotate(-4.387deg);
     top: 130.38vh;
-    left: 172vh;
+    right: -50vh;
+    
 }
 .right-2{
     width: 40rem;
     top: 240.5vh;
-    left: 165vh;
+    right: -30vh;
 }
 .right-3{
     width: 27.625rem;
     height: 28rem;
     transform: rotate(17.189deg);
     top: 350.44vh;
-    left: 165vh;
+    right: -20vh;
 }
 
 
@@ -445,7 +446,7 @@ body{
 
 .card{
     display: flex;
-    width: 18.5rem;
+    max-width: 18.5rem;
     padding: 1.5rem;
     flex-direction: column;
     align-items: center;
@@ -470,6 +471,7 @@ body{
 }
 
 .card-img{
+    width: 100%;
     margin-bottom: 1.25rem;
 }
 
