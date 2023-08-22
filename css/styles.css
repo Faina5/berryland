@@ -1,5 +1,4 @@
 @import url('./normalize.css');
-@import url('./media.css');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
@@ -7,6 +6,7 @@ html{
     box-sizing: border-box;
     max-height: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 *, *::after, *::before{
@@ -27,14 +27,10 @@ h1{
     margin: 0;
 }
 
-:root {
-    --index: calc(1vw + 1vh);
-}
-
 }
 html, body{
     height: 100%;
-
+    scroll-behavior: smooth;
 }
 
 body{
@@ -45,7 +41,6 @@ body{
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.0225rem;
-    overflow-x: hidden;
 }
 
 .wrapper{
@@ -84,7 +79,18 @@ body{
     margin-top: 3.25rem;
 }
 
+.menu__btn{
+    display: none;
+}
+.shopping-cart{
+    display: none;
+}
+
 .menu{
+    display: none;
+}
+
+.menu-desktop{
     margin: 3rem;
     margin-top: 1rem;
 }
@@ -145,6 +151,10 @@ body{
     position: absolute;
     z-index: -1;
 }
+.mobile-back{
+    display: none;
+}
+
 .main-back__left, .main-back__right{
     position: absolute;
     z-index: -1;
@@ -321,6 +331,10 @@ body{
     flex-direction: column;
 }
 
+.cart-trash{
+    cursor: pointer;
+}
+
 .cart-trash__item{
     display: flex;
     flex-direction: row;
@@ -383,7 +397,7 @@ body{
     color: #343434;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .quantity-cart2::before {
@@ -533,7 +547,7 @@ body{
     display: flex;
     width: 7.125rem;
     padding: 0.75rem 0.5rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 1rem;
     background: #2F4F3C;
@@ -592,5 +606,32 @@ body{
 
 .footer-menu__title{
     font-weight: 800;
+}
+
+.menu__btn{
+  width: 2.5rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  z-index: 2;
+  display: none;
+
+}
+.menu__btn:hover{
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.menu__btn span{
+  height: 3px;
+  background-color: #2F4F3C;
+  border-radius: 1rem;
+  width: 100%;
 }
 

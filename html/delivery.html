@@ -7,31 +7,68 @@
     <link rel="icon" href="../img/berry.png">
 
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <script src="../js/main.js" defer></script>
     
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container">
-                <div class="header-inner">
-                    <div class="menu">
-                        <ul class="menu-list__right">
-                            <li class="menu-list__item"> <a href="#">Иврит<img src="../img/israel-flag-icon.png" alt="flag" class="menu-list__item-img"></a></li>
-                            <li class="menu-list__item"><a href="../index.html">Все продукты</a></li>
-                            <li class="menu-list__item"> <a href="#">Рецепты</a> </li>
-                        </ul>
-                        </div>
-                        <img src="../img/logo.svg" alt="logo" class="menu-logo">
-                        <div class="menu">
-                        <ul class="menu-list__left">
-                            <li class="menu-list__item-here"><a href="#">Доставка</a></li>
-                            <li class="menu-list__item"><a href="#">Оплата</a></li>
-                            <li class="menu-list__item"><a href="#">Корзина</a></li>
-                        </ul>
+            <div class="menu__btn-section">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button> 
+          </div>
+              <div class="container">
+                  <div class="header-inner">
+                    
+    
+                    <nav class="menu">
+                    <ul class="menu__ul">
+                    <li class="menu-list__item"> <a class="menu__list-link" href="#">Иврит<img src="../img/israel-flag-icon.png" alt="flag" class="menu-list__item-img"></a></li>
+                    <li class="menu-list__item-here">Все продукты</li>
+                    <li class="menu-list__item"> <a class="menu__list-link" href="#">Рецепты</a> </li>
+                    <li class="menu-list__item"><a class="menu__list-link" href="./html/delivery.html">Доставка</a></li>
+                    <li class="menu-list__item"><a class="menu__list-link" href="#">Оплата</a></li>
+                    </ul>
+                  </nav>
+                      <nav class="menu-desktop">
+    
+                         
+    
+                          <ul class="menu-list__right">
+                              <li class="menu-list__item"> <a class="menu__list-link" href="#">Иврит<img src="../img/israel-flag-icon.png" alt="flag" class="menu-list__item-img"></a></li>
+                              <li class="menu-list__item"><a class="menu__list-link" href="../index.html">Все продукты</a></li>
+                              <li class="menu-list__item"> <a class="menu__list-link" href="#">Рецепты</a> </li>
+                          </ul>
+    
+                      </nav>
+    
+                      <img src="../img/logo.svg" alt="logo" class="menu-logo">
+    
+                      <nav class="menu-desktop">
+                          <ul class="menu-list__left">
+                              <li class="menu-list__item-here">Доставка</li>
+                              <li class="menu-list__item"><a class="menu__list-link" href="#">Оплата</a></li>
+                              <li class="menu-list__item"><a class="menu__list-link cart-link" href="#">Корзина</a></li>
+                          </ul>
+                          
+                      </nav>
+    
                     </div>
-                    </div>
+                  
+                  
+    
+                  <nav class="shopping-cart">
+                    <img src="../img/ShoppingCart.svg" alt="cart" class="shopping-cart__img">
+                  </nav>
+    
                 </div>
-        </header>
+                
+          </header>
 
         <main class="main">
 
