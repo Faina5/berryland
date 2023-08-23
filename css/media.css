@@ -67,6 +67,10 @@
 
 @media (max-width: 1030px){
 
+    .main-back__left, .main-back__right{
+        display: none;
+    }
+
     /* MENU-BURGER */
     .menu-desktop{
         display: none;
@@ -153,9 +157,6 @@
         font-size: 1rem;
     }
 
-    .main-back__left, .main-back__right{
-        display: none;
-    }
     .main-back{
         display: none;
     }
