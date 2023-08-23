@@ -140,6 +140,9 @@
     .menu-logo{
         width: 80%;
     }
+    .main-back__left, .main-back__right{
+        display: none;
+    }
 }
 
 @media (max-width: 980px){
@@ -153,9 +156,6 @@
         font-size: 1rem;
     }
 
-    .main-back__left, .main-back__right{
-        display: none;
-    }
     .main-back{
         display: none;
     }
