@@ -27,8 +27,7 @@ a{
 h1{
     margin: 0;
 }
-
-}
+
 html, body{
     height: 100%;
     
@@ -138,8 +137,7 @@ body{
 .menu-list__right, .menu-list__left{
     display: inline-flex;
     align-items: flex-start;
-    gap: 2.75rem;
-
+    gap: 2.75rem;
 }
 
 .main{
@@ -574,7 +572,7 @@ body{
 
 .card-layout .card-layout__item:hover {
     transform: scale(1.05, 1.05);
-  }
+}
   
 .card-layout:hover > .card-layout__item:not(:hover) {
     transform: scale(0.95, 0.95);
